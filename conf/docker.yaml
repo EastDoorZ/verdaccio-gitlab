@@ -5,10 +5,6 @@ plugins: /verdaccio/plugins
 auth:
   gitlab:
     url: http://gitlab
-    authCache:
-      enabled: true
-      ttl: 300
-    publish: $maintainer
 
 uplinks:
   npmjs:
