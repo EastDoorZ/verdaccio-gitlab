@@ -32,3 +32,5 @@ RUN ln -s /opt/verdaccio-gitlab/build /verdaccio/plugins/verdaccio-gitlab
 
 # Inherited from parent image
 USER $VERDACCIO_USER_UID
+
+CMD $VERDACCIO_APPDIR/bin/verdaccio --config /verdaccio/conf/config.yaml --listen $VERDACCIO_PROTOCOL://0.0.0.0:$PORT
